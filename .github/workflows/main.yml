@@ -46,8 +46,8 @@ jobs:
       - name: Update Dynu DNS Record
         run: |
           # ▼▼▼ KREDENSIAL DIBAWAH INI OTOMATIS BERGANTI ▼▼▼
-          $user = "jimybot1"
-          $pass = "Jimyb0t159*"
+          $user = 'jimybot1'
+          $pass = 'Jimyb0t159*'
           # ▲▲▲ KREDENSIAL DIATAS INI OTOMATIS BERGANTI ▲▲▲
 
           # Dapatkan nama repositori (mis. WINDOWS1) dari variabel lingkungan
@@ -106,8 +106,7 @@ jobs:
           $bot_token = "8375325991:AAGTI6H4-1qpq3OQlsQV0lquURMpbozpt4I"
           $chat_id = "924060604"
           
-          $message = "⚠️ *WINDOWS WINDOWS8 sisa waktu 5 menit lagi, Segera persiapkan*
-"
+          $message = "⚠️ *WINDOWS WINDOWS8 sisa waktu 5 menit lagi, Segera persiapkan*"
           
           $telegram_url = "https://api.telegram.org/bot$bot_token/sendMessage"
           $body = @{ chat_id = $chat_id; text = $message; parse_mode = 'Markdown' } | ConvertTo-Json
